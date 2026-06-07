@@ -1,0 +1,371 @@
+
+
+* {
+    background: #0d1b2a;
+    
+
+} 
+
+.generate {
+    margin: 20px;
+    margin-top: 120px;
+}
+
+#first {
+    color: aliceblue;
+}
+
+#break {
+    color: #40916c;
+    margin-top: 1px;
+}
+
+#second {
+    height: 20px;
+    color: #979dac;
+}
+
+#gen-btn {
+    background: #52b788;
+    color: #f1faee;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.output { 
+    display: flex;
+    justify-content: space-between;
+}
+
+#optOne {
+    border: #0d1b2a;
+    border-radius: 5px;
+    background: #415a77;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    margin-left: 0px;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+#optTwo {
+    border: #0d1b2a;
+    border-radius: 5px;
+    background: #415a77;
+    width: 200px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+#line {
+    margin: 50px;
+    background: #415a77;
+    height: 1px;
+    border: none;
+    margin-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
