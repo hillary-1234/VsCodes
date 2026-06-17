@@ -12,13 +12,14 @@ body {
     width: 100%;
     box-sizing: border-box;
     /* max-width: 100%; */
-    border-color:#5f9341 ;
+    border-color:#1b4332 ;
     /* border-width: 1px; */
     height: 30px;
     border: 1px solid;
     justify-content: left;
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: bold;
 }
 
 #input-btn {
@@ -26,7 +27,7 @@ body {
     height: 30px;
     text-align: center;
     width: 150px;
-    background: #5f9341;
+    background: #1b4332;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -51,7 +52,7 @@ body {
     height: 30px;
     text-align: center;
     width: 150px;
-    background: #5f9341;
+    background: #1b4332;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
