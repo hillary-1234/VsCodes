@@ -1,62 +1,10 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-    <input type="text" id="input-el">
-    <button id="input-btn"> SAVE ENTRY</button>
-    <button id="delete-btn">DELETE ENTRY</button>
-    <button id="tab-btn">SAVE ENTRY</button>
-    <ul id="ul-el"></ul>
-    
 
 
-    <script src="inde.js"></script>
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default function getMatchingTripsArr(arr , keyword) {
+    return arr.filter(function(trip) {
+        return trip.description.toLowerCase().includes(keyword)
+    })
+}
 
 
 
