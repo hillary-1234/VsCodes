@@ -1,13 +1,9 @@
 
+.up { color: limegreen; }
 
-.up {
-    color: green;
-}
+.down { color: red; }
 
-.down {
-    color: red;
-}
-
+.neutral { color: gray; }
 
 
 

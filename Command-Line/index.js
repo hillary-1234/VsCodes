@@ -324,6 +324,30 @@
 
 
 
+// // YOU CAN NAME YOUR EXPORT AND CALL IT BY ITS NAME  //
+
+// import { interplanetaryDestinationsArr as destination, shortSpaceTripArr } from "./data.js"
+
+
+
+// console.log(destination)
+
+
+
+
+import { interplanetaryDestinationsArr, shortSpaceTripArr } from "./data.js"
+
+import getMatchingTripsArr from "./searchFunction.js"
+
+
+
+console.log(interplanetaryDestinationsArr)
+
+
+
+
+
+
 
 
 

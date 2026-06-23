@@ -11,7 +11,10 @@ import {getStockData } from "./fakeStockApi.js";
 
 const data = getStockData()
 
+let change = data.change
+let Price = data.price
 
+console.log(change)
 
 // console.log(data)
 
@@ -23,11 +26,26 @@ setInterval(() => {
 
     const data = getStockData();
 
+    
     priceImp.textContent = `PRICE: $${data.price.toFixed(4)}`;
     timeImp.textContent = `TIME: ${data.time}`;
 
 
-    arrowImp.innerHTML = 
+    if (Price < change) {
+        arrowImp.className = 'green'
+
+    } else if (Price > change) {
+        arrowImp.className = 'red'
+
+    } else {
+        arrowImp.className = 'white'
+    }
+
+    // compare prices 
+
+    console.log("Price:", Price)
+    console.log("Change:", change)
+
 
 console.log(`$${data.price.toFixed(4)}`)
 
