@@ -15,14 +15,14 @@ const interplanetaryDestinationsArr = [
         distanceKm: 384400,
         travelTimeDays: 3,
         priceUSD: 50000,
-        description:' Visit the first human outpost on the Moon and witness breathtaking live landscapes.'
+        description:' Visit the first human  outpost on the Moon and witness breathtaking live landscapes.'
     },
     {
         destination:'Titan Oasis',
         distanceKm: 1200000000,
         travelTimeDays: 730,
         priceUSD: 500000,
-        description: 'explore the methane lakes and the potential for extraterrestrial life in Titan.'
+        description: 'Explore the methane lakes and the potential for extraterrestrial life in Titan.'
     }
 
 ]
@@ -40,7 +40,7 @@ const shortSpaceTripArr = [
         distanceKm: 84400,
         travelTimeDays: 1,
         priceUSD: 5000,
-        description: 'experience weightlessness and breathtaking viesw of the earth from other home planet.'
+        description: 'Experience weightlessness and breathtaking views of the earth from other home planet.'
     }
 
     

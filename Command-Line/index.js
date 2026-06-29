@@ -335,109 +335,473 @@
 
 
 
-import { interplanetaryDestinationsArr, shortSpaceTripArr } from "./data.js"
+// // IMPORTING A FUNCTION ALSO CAN USE DEFAULT FUNCTION BTU DONT SEE THE REASON WHY 
 
-import getMatchingTripsArr from "./searchFunction.js"
 
+// import { interplanetaryDestinationsArr, shortSpaceTripArr } from "./data.js"
 
+// import getMatchingTripsArr from "./searchFunction.js"
 
-console.log(interplanetaryDestinationsArr)
 
 
+// console.log (getMatchingTripsArr(interplanetaryDestinationsArr, 'experience'))
 
 
 
 
+// // DATE() CONSTRUCTOR 
 
+// const dateSnapshot = new Date()
+// console.log(dateSnapshot.getFullYear().toString()) /// ALMOST THE SAME THING 
 
+// console.log(`you have been a fool since ${dateSnapshot.getFullYear()}`) /// ALMOST THE SAME THING 
 
 
 
 
+// // ERROR CONSTRUCTOR 
 
 
+// function checkUsername(userName) {
+//     if(userName){
+//     console.log(userName)
+// }  else {
+//     console.log(new Error('No username provided')) // EITHER CONSOLE OR throw 
 
+//     throw new Error('No username provided')  // EITHER THIS OR CONSOLE BUT IF YOU USE THIS NOTHING RUNS AFTER IT 
 
+// }
+// }
 
+// checkUsername('')
 
 
 
 
+// // PRE -- INCREMENT 
 
+// let currentTicket = 0
 
+// function getNextTicket() {
+//     return ++currentTicket
 
+// }
 
 
+// console.log(`Guest 1, your ticket number is: ${getNextTicket()}`)
 
 
 
 
 
 
+// // HOISTING 
 
+// function getWeather() {
+//     return " Today's weather is warm and sunny"
+// }
 
+// console.log(getWeather())
 
 
+// console.log(getNews())
 
+// function getNews() {
+//     return " you are mad"
+// }
 
+// console.log(trafficInfo)
 
+// let trafficInfo = ' All road are busy right now '  // WONT WORK CAUSE IT IS A VARIABLE 
 
 
 
 
+// ARROW FUNCTIONS
 
 
+// const getSpendAlert = function(amount) {
+//     return `Warning! You just spent $${amount}`
+// // }
 
 
+// // USING ARROW FUNCTIONS JUST LIKE REFACTORS  BUT ONLY WORKS FOR SIMPLE FUNCTIONS
+// IF YOU HAVE MORE COMPLEX ENTRY YOU NEED TO USE THE " {} " BACK LIKE NEXT LINEEXAMPLE BELOW 
 
+// const getSpendAlert = (name, amount) => {
+//     return `Hey ${name}, Warning! You just spent $${amount}`
+// }
 
+// const getSpendAlert = (name, amount) => `Hey ${name}, Warning! You just spent $${amount}`
 
 
+// console.log(getSpendAlert("Hillary", 150))
 
 
+// const overSpeeding = (speed) => `Warning you are overspeeding at ${speed} MPH`
 
+// console.log(overSpeeding(40))
 
 
+// const overSpeedings = (speedLimit, carSpeed) => {
+//     if (carSpeed > speedLimit) {
+//         return `Warning you are overspeeding at ${carSpeed} MPH`
+//     } else {
+//         return 'Drive safe'
+//     }
+// }
 
+// console.log(overSpeedings(30, 40))
 
 
+// // INLINE ARROW FUNCTIONS CHALLENGE
 
+// // THE .map FUNCTION THATS USED INSTED OF LOOPS IN AN ARRAY 
 
 
 
+// const distanceTraveledMiles = [267, 345, 234, 190, 299]
 
+// // const distanceTraveledKm = distanceTraveledMiles.map(function(distance) {
+// //     return Math.round(distance * 1.6)
+// // })
 
 
+// // console.log(distanceTraveledKm)
 
 
 
 
+// const distanceTraveledKm = distanceTraveledMiles.map( (distance) => Math.round(distance * 1.6))
 
+// // const doubled = nums.map(num => num * 2)
 
+// console.log(distanceTraveledKm)
 
 
 
 
+// // THE .REDUCE FUNCTION 
 
+// // INSTEAD OF CONSTANTLY ADD I JUST REDUCE TO A SINGLE RESULT CONSTANTLY INSTED OF LOOPS 
 
 
 
+// import { itemsBoughtArr } from "./itemsBoughtArr.js"
 
+// console.log(itemsBoughtArr)
 
+// function calculateTotalCost(itemsBoughtArr) {
 
+//     const total = itemsBoughtArr.reduce((acc, item) => acc + item.priceUSD, 0)
 
+//     return(total)
 
+// }
+// console.log(calculateTotalCost(itemsBoughtArr))
 
+// // POSITONS -- HOW TO DO IT  / /
 
+// // array.reduce((accumulator, currentValue) => {
+// //     return updatedValue
+// // }, initialValue)
 
 
 
 
 
+// // DEFAULT PARAMENTERS -- NaN VALUE WHICH IS A VARIABLE NOT ASSINGED WE COULD DO " = " NEXT TO THE VARIABLE DURING DECLEARING //
 
 
+// import { itemsBoughtArr } from "./itemsBoughtArr.js"
 
+// console.log(itemsBoughtArr)
 
+// function calculateTotalCost(itemsBoughtArr, discount = 0) {
+
+//     const total = itemsBoughtArr.reduce((acc, item) => acc + item.priceUSD, 0)
+
+//     return total - discount
+
+// }
+// console.log(calculateTotalCost(itemsBoughtArr))
+
+
+
+
+
+// // THE REST PARAMETER //  instead of always declaring plus incase of adding variables 
+
+// function setPermisionLevel(permissionLevel, ...names) {
+
+//     names.forEach((name) => console.log(` ${name} now has ${permissionLevel} level access.`))
+
+//     // console.log(` ${name1} now has ${permissionLevel} level access.`)
+//     // console.log(` ${name2} now has ${permissionLevel} level access.`)
+//     // console.log(` ${name3} now has ${permissionLevel} level access.`)
+
+// }
+
+
+
+
+// // setPermisionLevel('admin', 'Dave', 'Sally','Mike')
+
+// function getLabelsHtml(text, sender, ...id) {
+//     const labelsHtml = id.map(name =>
+        
+//     `<div class="label-card">
+//         <p>Dear ${name.name} </p>
+//         <p>${text}text</p>
+//         <p>Best wishes</p>
+//         <p>${sender}</p>
+//     </div>`
+//     ).join()
+
+//     return labelsHtml
+// }
+
+
+// // }
+
+// // // OR REMOVE THE COST CAUSE WE DONT NEED TO NAME THE ARRAY CAUSE .MAP ALREADY 
+// // // OUTPUTS AND ARRAY SO NO NEED TO DECLARE IT AGAIN 
+
+
+
+// // function getLabelsHtml(text, sender, ...id) {
+// //     return id.map(name =>
+        
+// //     `<div class="label-card">
+// //         <p>Dear ${name.name} </p>
+// //         <p>${text}text</p>
+// //         <p>Best wishes</p>
+// //         <p>${sender}</p>
+// //     </div>`
+// //     ).join()
+// // )
+
+
+// // }
+
+
+// const text = 'Thank you for all the hard work throughout the year '
+// const sender = 'Tom'
+
+// document.getElementById('labels-container').innerHTML = getLabelsHtml(
+//     text, sender,
+//     {name: 'Sally'},
+//     {name: 'Mike'},
+//     {name: 'Rob'},
+//     {name: 'Harriet'},
+//     {name: 'Hillary'}
+// )
+
+
+
+
+// // OBJECT DESTRUCTURING 
+
+// const person = {
+//     name: "Sarah",
+//     age: 20
+// }
+
+// const { name, age } = person
+
+// console.log(name) // Sarah
+// console.log(age) // 20
+
+
+
+
+
+
+// SUPER CHALLENGES: REAL ESTATE // 
+
+
+
+// import { propertyForSale } from "./Properties/PropertiesforSaleArr.js"
+// import { placeholderPropertyObj } from "./Properties/placeholderProperties.js"
+
+// // console.log(placeholderPropertyObj)
+    
+
+
+// const getProperty = propertyForSale
+// const placeholderProperty = [placeholderPropertyObj]
+
+
+// const [{propertyLocation, priceGBP, roomsM2, Comment, image}] = propertyForSale
+// // const {propertyLocation, priceGBP, roomsM2, Comment, image} = placeholderProperty
+
+
+// // placeholderProperty
+
+// function getPropertyHtml( getProperty = placeholderProperty ) {
+
+//     return getProperty.map(property => `
+
+//         <section class="card">
+
+//             <img src= ${property.image}>
+
+//             <div class="card-right">
+//                 <h2>${property.propertyLocation}</h2>
+
+//                 <p>£${property.priceGBP}</p>
+
+//                 <p>${property.Comment}</p>
+
+//                 <h3>${property.roomsM2.reduce((total, room) => total + room, 0)} m&sup2; </h3>
+
+//             </div>
+//         </section>
+// `).join()
+// }
+// document.getElementById('container').innerHTML = getPropertyHtml(getProperty)
+
+
+
+
+
+// function getPropertyHtml( info ) {
+
+//     return info.map(property => `
+
+//         <section class="card">
+
+//             <img src= ${property.image}>
+
+//             <div class="card-right">
+//                 <h2>${property.propertyLocation}</h2>
+
+//                 <p>£${property.priceGBP}</p>
+
+//                 <p>${property.Comment}</p>
+
+//                 <h3>${property.roomsM2.reduce((total, room) => total + room, 0)} m&sup2; </h3>
+
+
+//             </div>
+//         </section>
+
+//     </div>
+// `).join('')
+
+
+
+// }
+// document.getElementById('container').innerHTML = getPropertyHtml(propertyForSale)
+
+
+
+
+// A S Y N C H R O N O U S  J A V A -- S C R I P T  &  A P Is  I N T R O  ///
+
+// A P I = APPLICATION PROGRAMMING INTERFACE -- HELPS YOU CONNECT TWO APPLICATION SERVERS 
+
+
+// REQUEST AND RESPONSE
+
+// FETCHING WITH .THEN()
+
+
+// fetch('https://apis.scrimba.com/dog.ceo/api/breeds/image/random')
+//     .then(response => response.json())
+//     .then(data => {
+//         const imageElement = document.createElement('img')
+//         imageElement.src = data.message
+//         imageElement.alt = 'random dog picture'
+//         document.getElementById('img-container').appendChild(imageElement)
+//     })
+
+
+
+// fetch('https://apis.scrimba.com/bored/api/activity')
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+//     .catch(errgh => {
+//         console.log(errgh)
+//         // throw new Error(' you are mad ')
+//     })
+//     .finally(() => console.log('The operations completed.'))
+
+
+
+
+
+
+
+
+// // TRYING OUT DISPLAYING IN DOM
+
+
+
+// fetch('https://apis.scrimba.com/bored/api/activity')
+//     .then(response => response.json())
+//     .then(data => {
+//                     const textElement = document.createElement('p')
+//                     textElement.textContent = data.activity
+//                     textElement.textContent = JSON.stringify(data, null, 2)
+//                     document
+//                             .getElementById('text-container')
+//                             .appendChild(textElement)
+// })
+    
+
+
+
+
+
+
+
+// fetch('https://apis.scrimba.com/bored/api/activity')
+//     .then(response => response.json())
+//     .then(data => {
+
+//     })
+
+
+
+
+
+
+
+// // USING ASYNC FUNCTION AND WAIT 
+
+//     async function getData() {
+//         const response = await fetch('https://apis.scrimba.com/bored/api/activity')
+//         const data = await response.json()
+
+//         console.log(data)
+//     }
+
+//     getData()
+
+
+
+
+async function getData() { 
+    try {
+        const response = await fetch('https://apis.scrimba.com/bored/api/ativity')
+        if (!response.ok) {
+            throw new Error('There was a problem with the API')
+        }
+        const data = await response.json()
+
+        console.log(data)
+}
+
+    catch(error) {
+        console.log("can't get data back")
+
+}
+}
+
+getData()
+
+.finally(() => console.log('The Operations Complete.'))
 
 
 

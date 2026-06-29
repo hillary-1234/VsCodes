@@ -1,83 +1,113 @@
-
-
+/* 
+/* 
 body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 400px;
 }
-
+// 
 #input-el {
     /* background:#a8dadc; */
-    width: 100%;
-    box-sizing: border-box;
+    /* width: 100%; */
+    /* box-sizing: border-box; */
     /* max-width: 100%; */
-    border-color:#1b4332 ;
+    /* border-color:#1b4332 ; */
     /* border-width: 1px; */
-    height: 30px;
-    border: 1px solid;
-    justify-content: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: bold;
-}
+    /* height: 30px; */
+    /* border: 1px solid; */
+    /* justify-content: left; */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* font-weight: bold; */
+/* } *  */
 
-#input-btn {
-    margin-top: 5px;
-    height: 30px;
-    text-align: center;
-    width: 150px;
-    background: #1b4332;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    border: 1px solid #5f9341;
+/* #input-btn { */
+    /* margin-top: 5px; */
+    /* height: 30px; */
+    /* text-align: center; */
+    /* width: 150px; */
+    /* background: #1b4332; */
+    /* color: #fff; */
+    /* cursor: pointer; */
+    /* font-weight: bold; */
+    /* border: 1px solid #5f9341; */
     
-}
+/* } */
+/*  */
+/* #delete-btn { */
+    /* margin-top: 5px; */
+    /* height: 30px; */
+    /* text-align: center; */
+    /* width: 150px; */
+    /* background: #5f9341; */
+    /* color: #fff; */
+    /* cursor: pointer; */
+    /* font-weight: bold; */
+    /* border: 1px solid #5f9341; */
+/* } */
 
-#delete-btn {
-    margin-top: 5px;
-    height: 30px;
-    text-align: center;
-    width: 150px;
-    background: #5f9341;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    border: 1px solid #5f9341;
-}
-
-#tab-btn {
-    margin-top: 5px;
-    height: 30px;
-    text-align: center;
-    width: 150px;
-    background: #1b4332;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    border: 1px solid #5f9341;
+/* #tab-btn { */
+    /* margin-top: 5px; */
+    /* height: 30px; */
+    /* text-align: center; */
+    /* width: 150px; */
+    /* background: #1b4332; */
+    /* color: #fff; */
+    /* cursor: pointer; */
+    /* font-weight: bold; */
+    /* border: 1px solid #5f9341; */
     
+/* } */
+
+/* ul { */
+/* margin-top: 20px; */
+/* list-style: none; */
+/* padding-left: 0; */
+/* } */
+/*  */
+/* li { */
+    /* margin-top: 5px; */
+
+/* } */
+/*  */
+/* a { */
+    /* color: #5f9341; */
+
+/* */ */
+
+/* 
+
+
+REST PARAMETER
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
-ul {
-margin-top: 20px;
-list-style: none;
-padding-left: 0;
-}
-
-li {
-    margin-top: 5px;
-
-}
-
-a {
-    color: #5f9341;
-
+#labels-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 
+.label-card {
+    border: 2px solid black;
+    padding: 15px;
+    width: 220px;
+    height: 180px;
+    border-radius: 10px;
+} */
 
+
+
+
+
+
+/* // SUPER CHALLENGES: REAL ESTATE //  */
 
 
 
