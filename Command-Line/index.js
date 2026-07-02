@@ -782,62 +782,427 @@
 
 
 
-async function getData() { 
-    try {
-        const response = await fetch('https://apis.scrimba.com/bored/api/ativity')
-        if (!response.ok) {
-            throw new Error('There was a problem with the API')
-        }
-        const data = await response.json()
+// async function getData() { 
+//     try {
+//         const response = await fetch('https://apis.scrimba.com/bored/api/activity')
+//         if (!response.ok) {
+//             throw new Error('There was a problem with the API')
+//         }
+//         const data = await response.json()
 
-        console.log(data)
-}
+//         console.log(data)
+// }
 
-    catch(error) {
-        console.log("can't get data back")
+//     catch(error) {
+//         console.log("can't get data back")
 
-}
-}
+// }
+// }
 
-getData()
+// getData()
 
-.finally(() => console.log('The Operations Complete.'))
-
-
+// .finally(() => console.log('The Operations Complete.'))
 
 
 
 
+// // USING ASYNC FUNVTIONS 
+
+
+
+// async function getDatas() {
+//     try {
+//         const response = await fetch('https://apis.scrimba.com/jsonplaceholder/posts', {method: 'GET'})
+//         if (!response.ok) {
+//             throw new Error('Check Api')
+//         }
+//         const datas = await response.json()
+//         console.log(datas)
+
+//     }
+//         // console.log(datas)
+//     catch(err) {
+//         console.log('New api has issues')
+//     }
+// }
+
+// getDatas()
+
+
+// fetch('https://apis.scrimba.com/jsonplaceholder/posts', {
+//     method: 'POST',
+
+//         headers: {
+//                 'Content-Type' : 'application/json'
+//         },
+
+//     body: JSON.stringify({
+//         title: 'Holiday Nightmares ',
+//         body: 'when i was kidnapped in Scotland',
+//         userId: 101,
+//     })
+// })
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch(err => console.log(error))
+
+
+// async function newDatass() {
+    
+// }
+
+
+
+
+
+// // USING PROMISES  AND PROMISE.ALL
+
+
+// function createPromise() {
+// return new Promise((resolve, reject) => {
+//     const success = Math.random() > 0.5
+//         if (success) {
+//             resolve('Operation sucess')
+//         } else {
+//             reject('Operations failed')
+//         }
+// })
+// }
+
+// try{
+//     const promise1 = createPromise()
+//     const promise2 = createPromise()
+//     const promise3 = createPromise()
+//     const result = await Promise.all([promise1, promise2, promise3])
+//     console.log(result)
+// } catch(err) {
+//     console.log(err)
+// }
+
+// // promise.then(response => console.log(response))
+
+
+// try{
+//     const response = await promise
+//     console.log(response)
+// } catch(err) {
+//     console.log(err)
+
+// }
+
+
+
+// /// FOR ARRAYS OF CONTENTS 
+
+
+// function preLoading(url) {
+//     return new Promise((resolve, reject) => {
+
+//         const img = new Image()
+
+//         img.src = url
+
+//         img.addEventListener('load', () => resolve(img))
+
+//         img.addEventListener('error', () => reject('image not loading'))
+
+//     })
+// }
+
+// const imageUrls = [
+//     'https://picsum.photos/200',
+//     'https://picsum.photos/300',
+//     'https://picsum.photos/400'
+// ]
+
+// try {
+
+//     const results = await Promise.all(
+
+//         imageUrls.map((url) => preLoading(url))
+
+//     )
+
+//     results.forEach((img) => {
+//         document
+//             .getElementById('img-container')
+//             .appendChild(img)
+//     })
+
+// } catch (error) {
+
+//     console.error(error)
+
+// }
+
+
+
+
+// // SINGLE ELEMENTS NOT ARRAYS 
+
+
+// function preLoading(url){
+//     return new Promise((resolve, reject) => {
+
+//         const img = new Image()
+
+//         img.src = url
+//         img.alt = 'fine cartoon'
+
+//         img.addEventListener('load', ()=> resolve(img))
+//         img.addEventListener('error', ()=> reject('image not loading '))
+
+        
+//     })
+// }
+
+// try{
+//     const results = await preLoading('https://upload.wikimedia.org/wikipedia/en/9/9d/Link_%28Hyrule_Historia%29.png')
+//     console.log(results)
+//     document.getElementById('img-container').appendChild(results)
+//     } catch (error) {
+//         console.error(error)
+//     }
+
+
+
+// // PROMISES CLASSWORK //
+
+
+// function uploadFile() {
+//     return new Promise((resolve, reject) => {
+//         console.log('Step 1: Uploading file...')
+//         setTimeout(() =>{
+//             resolve('Files have been uploaded')
+//         },2000)
+//     })
+// }
+
+// function processFile(callback) {
+//     return new Promise ((resolve, reject) => {
+//         console.log('Step 2: Processing file...')
+//         setTimeout(() => {
+//             resolve('Files have been Processed')
+//         },4000)
+//     })
+// }
+
+// function notifyUser(callback) {
+//     return new Promise((resolve, reject) => {
+//         console.log('Step 3: Notifying user...')
+//         setTimeout(() => {
+//             resolve('Users have been notified')
+//         },6000)
+//     })
+// }
+
+// const result = await Promise.all([
+
+//     uploadFile(),
+
+//     processFile(() => {
+//         // console.log('File processed')
+//     }),
+
+//     notifyUser(() => {
+//         // console.log('User notified')
+//     })
+
+// ])
+
+
+
+// try{
+//     const response = await uploadFile()
+//     console.log()
+// } catch(err) {
+//     console.log(err)
+// }
+
+
+
+// try{
+//     const response = await processFile()
+//     console.log()
+// } catch(err) {
+//     console.log(err)
+// }
+
+
+
+// try{
+//     const response = await notifyUser()
+//     console.log()
+// } catch(err) {
+//     console.log(err)
+// }
+// finally{
+//     console.log('All steps completed!')
+// }
+
+// // OR 
+
+// try{
+// await uploadFile()
+// await processFile()
+// await notifyUser()
+// console.log('All steps are completed!')
+// } catch(err) {
+//     console.log(err)
+// }
+
+
+// function getImagePromise(url) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const img = new Image()
+//             img.src = url
+//             img.alt = 'scenic image'
+//             img.addEventListener('load', () => resolve(img))
+//             img.addEventListener('error', () => reject(new Error(`failed to load image: ${url}`)))
+//         },500)
+//     })
+// }
+
+// const images = [
+//     'https://scrimba.com/links/advancedjs-resources-images-scenic1',
+//     'https://scrimba.com/links/advancedjs-resources-images-scenic2',
+//     'https://scrimba.com/links/advancedjs-resources-images-scenic3'
+// ]
+
+
+// async function preloadImages(imageUrlsArr) {
+//     const imgContainer = document.getElementById('img-container')
+//     const uploadContainer = document.getElementById('upload-container')
+
+    
+// const promises = images.map((url) => {
+//     return getImagePromise(url)
+// })
+
+// try{
+//     const results = await Promise.all(promises)
+//         console.log( 'all img shown')
+//         uploadContainer.style.display = 'none'
+//         results.forEach((img) => {imgContainer.appendChild(img)})
+// }catch(err) {
+//         console.log(err)
+// }
+// }
+
+// document.getElementById('submit-img').addEventListener('click', () => preloadImages(images))
 
 
 
 
 
 
+// Promise.all(results)
+// .then((results)=> {
+
+//     images.forEach((img) => {
+//             uploadContainer.appendChild(img)
+//         })
+// })
+// .catch((err) =>{
+//     console.log(err)
+// })
+
+
+// } catch(err) {
+//     // console.log('can not load')
+// }
+
+
+// const results = [ ]
 
 
 
 
 
+// // AI ENGINEERING 
 
 
+// import { data } from '/utils/dates'
+
+// const tickersArr = []
+
+// const generateReportBtn = document.querySelector('.generate-report-btn')
+
+// generateReportBtn.addEventListener('click', fetchStockData)
+
+// document.getElementById('ticker-input-form').addEventListener('submit', (e) =>{
+//     e.preventDefault()
+
+//     const tickerInput = document.getElementById('ticker-input')
+//     if (tickerInput.value.length > 2) {
+//         generateReportBtn.disabled = false
+//         const newTickerStr = tickerInput.value
+//         tickersArr.push(newTickerStr.toUpperCase())
+//         tickerInput.value = ''
+//         renderTicker()
+//     }else {
+//         const label = document.getElementsByTagName('label')[0]
+//         label.style.color = 'red'
+//         label.textContent = 'you must add at least one ticker. A ticker is a 3 letter or more code for a stock. E.g TSLA for Tesla.'
+//     }
+// })
+
+// function renderTicker() {
+//     const tickersDiv = document.querySelector('.ticker-choice-display')
+//     tickersDiv.innerHTML = ''
+//     tickersArr.forEach((ticker) => {
+//         const newTickerSpan = document.createElement('span')
+//         newTickerSpan.textContent = ticker
+//         newTickerSpan.classList.add('ticker')
+//         tickersDiv.appendChild(newTickerSpan)
+//     })
+// }
+
+// const loadingArea = document.querySelector('.loading-panel')
+// const apiMessage = document.getElementById('api-message')
+
+// async function fetchStockData() {
+//     document.querySelector('.action-panel').style.display = 'none'
+//     loadingArea.style.display = 'flex'
+//     try {
+//         const stockData = await Promise.all(tickersArr.map(async(ticker) => {
+//             const url = `https://api.polygon.io/v2/aggs/tickers/${ticker}/range/1/day/${dates.startDate}/${dates.endDate}?apiKey=${process.env.POLYGON_API_KEY}`
+//             const reponse = await fetch(url)
+//             const data = await response.text()
+//             const status = await response.status
+//             if (status === 200) {
+//                 apiMessage.innertext = 'Creating report'
+//                 return data
+//                     }else{
+//                         loadingArea.innertext = 'There was an error fetching stock data.'
+//                     }
+//         }))
+//         fetchReport(stockData.join(''))
+//         } catch(err) {
+//             loadingArea.innertext = 'There was an error fetching stock data'
+//             console.log('error:', err)
+//         }
+    
+// }
+
+// async function fetchReport(data) {
+//     // AI goes here
+// }
+
+// function renderReport(output) {
+//     loadingArea.style.display = 'none'
+//     const outputArea = document.quesrySelector('.output-panel')
+//     const report = document.createElement('p')
+//     outputArea.appendChild(report)
+//     report.textContent = output
+//     outputArea.style.display = 'flex'
+// }
 
 
+//BUILD UP
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+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
 
 
 
