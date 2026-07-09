@@ -4,5 +4,9 @@
     "dotenv": "^17.4.2",
     "openai": "^6.45.0"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  }
 }
