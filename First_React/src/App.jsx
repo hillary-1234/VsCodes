@@ -2,15 +2,17 @@
 
 import HeaderCompGoog from "./HeaderCompGoog"
 import SearchCompGoog from "./SearchCompGoog"
+import FooterCompGoog from "./FooterCompGoog"
 
 
 
 
 
 const App = () => {
-  return ( <div className="flex flex-col h-screen w-screen">
+  return ( <div className="flex flex-col h-screen w-full ">
     <HeaderCompGoog /> 
     <SearchCompGoog />
+    <FooterCompGoog />
   </div>
   )
 }
