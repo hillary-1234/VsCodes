@@ -84,6 +84,386 @@
 
 
 
+// // using flex and styling content 
+
+
+// import Cat from "./Cat"
+
+// const App = () => {
+//   return ( <div>
+    
+//     <div className="flex justify-center h-64 p-4 m-4 border-2 border-blue-400">
+//       <Cat />
+//       <Cat />
+//       <Cat />
+//     </div>
+//     <div className="flex justify-between h-64 p-4 m-4 border-2 border-red-400">
+//       <Cat />
+//       <Cat />
+//       <Cat />
+//     </div> <div className="flex justify-center items-center h-64 p-4 m-4 border-2 border-green-400">
+//       <Cat />
+//       <Cat />
+//       <Cat />
+//     </div> <div className="flex justify-between items-end h-64 p-4 m-4 border-2 border-purple-400">
+//       <Cat />
+//       <Cat />
+//       <Cat />
+//     </div> <div className="flex justify-between items-center h-64 p-4 m-4 border-2 border-orange-400">
+//       <Cat />
+//       <Cat />
+//       <Cat />
+//     </div> <div className="flex flex-col justify-between items-center h-100 p-4 m-4 border-2 border-white-400"> 
+//       <Cat />
+//       <Cat />
+//       <Cat />
+//     </div>
+    
+
+//   </div> )
+// }
+// export default App
+
+
+
+
+// // using flex and styling content with multiple boxes flexed in a column
+
+
+
+// import Box1 from "./Box1.jsx"
+// import Box2 from "./Box2.jsx"
+// import Box3 from "./Box3.jsx"
+// import Box4 from "./Box4.jsx"
+
+
+
+// const App = () => {
+//   return ( <div>
+//     <Box1 />
+//     <Box2 />
+//     <Box3 />
+//     <Box4 />
+//   </div>
+//   )
+// }
+// export default App
+
+
+// // USING TAILWIND TO STYLE CONTENT WITH SPECIFIC CUSTOMS WIDTHS AND HEIGHTS NOT SET BY TAILWIND
+
+
+// const App = () => {
+//   return ( <div >
+//       <div className="bg-blue-300 w-[420px] mb-[20px]">
+//         one
+//       </div>
+//       <div className="bg-blue-300 ">
+//         two
+//       </div>
+//   </div>
+//   )
+// }
+// export default App
+
+
+
+
+// // CREATING  DIFFERENT DESIGNS WITH FLEX, FLEX-COL,JUSTIFY AND ITEMS
+
+
+
+
+// import QuoteBox1 from "./QuoteBox1.jsx"
+// import QuoteBox2 from "./QuoteBox2.jsx"
+// import QuoteBox3 from "./QuoteBox3.jsx"
+
+
+// const quote1 = {
+//   text: "The best way to get started is to quit talking and begin doing.",
+//   author: "Walt Disney",
+//   bio: "An American entrepreneur.",
+// }
+
+// const quote2 = {
+//   text: " A ship in harbor is safe, but that is not what ships are built for.",
+//   author: "Admiral Grace Hopper",
+//   bio: "An American computer scientist.",
+// }
+
+// const quote3 = {
+//   text: "If you optimise for the long term, you will be rewarded.",
+//   author: "Jeff Bezos",
+//   bio: "An American entrepreneur.",
+// }
+
+
+
+// const App = () => {
+//   return ( <div flex flex-col items-center justify-center >
+//     <QuoteBox1 quote = {quote1} />
+//     <QuoteBox2 quote = {quote2} />
+//     <QuoteBox3 quote = {quote3} />
+//   </div>
+//   )
+// }
+// export default App
+
+
+
+
+
+// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

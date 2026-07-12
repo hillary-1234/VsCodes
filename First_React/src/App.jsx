@@ -1,34 +1,18 @@
 
 
-import Cat from "./Cat"
+import HeaderCompGoog from "./HeaderCompGoog"
+import SearchCompGoog from "./SearchCompGoog"
+
+
+
+
 
 const App = () => {
-  return ( <div>
-    
-    <div className="flex h-64 p-4 m-4 border-2 border-blue-400">
-      <Cat />
-      <Cat />
-      <Cat />
-    </div>
-    <div className="flex h-64 p-4 m-4 border-2 border-red-400">
-      <Cat />
-      <Cat />
-      <Cat />
-    </div> <div className="flex h-64 p-4 m-4 border-2 border-green-400">
-      <Cat />
-      <Cat />
-      <Cat />
-    </div> <div className="flex h-64 p-4 m-4 border-2 border-purple-400">
-      <Cat />
-      <Cat />
-      <Cat />
-    </div> <div className="flex h-64 p-4 m-4 border-2 border-orange-400">
-      <Cat />
-      <Cat />
-      <Cat />
-    </div>
-
-  </div> )
+  return ( <div className="flex flex-col h-screen w-screen">
+    <HeaderCompGoog /> 
+    <SearchCompGoog />
+  </div>
+  )
 }
 export default App
 
