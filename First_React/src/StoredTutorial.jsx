@@ -213,19 +213,138 @@
 
 
 
-// 
+// //  USING TAILWIND TO CREATE A GOOGLE SEARCH PAGE CLONE WITH HEADER, SEARCH BAR AND FOOTER COMPONENTS
+
+
+
+// import HeaderCompGoog from "./HeaderCompGoog"
+// import SearchCompGoog from "./SearchCompGoog"
+// import FooterCompGoog from "./FooterCompGoog"
+
+
+
+
+
+// const App = () => {
+//   return ( <div className="flex flex-col h-screen w-full ">
+//     <HeaderCompGoog /> 
+//     <SearchCompGoog />
+//     <FooterCompGoog />
+//   </div>
+//   )
+// }
+// export default App
+
+
+
+
+// // USING THE ONCLICK FUNCTION AND THE USE STATE HOOK
+
+
+
+
+// import { useState } from "react";
+
+
+
+// const App = () => {
+
+//   const [message, setMessage] = useState("alvine was here");
+//   console.log(message)
+
+//   return ( <div className="flex flex-col items-center justify-center h-screen ">
+//     <div className="text-3xl text-stone-400">{message}</div>
+//     <div className="mt-4 ">
+//       <button className=" m-2 px-4 text-white bg-green-400 round-md" onClick={() => { setMessage("bye") }} >one</button>
+//       <button className=" m-2 px-4 text-white bg-blue-400 round-md" onClick={() => {setMessage("yay")}}>two</button>
+//       <button className=" m-2 px-4 text-white bg-red-400 round-md" onClick={() => {setMessage("oops")}}>three</button>
+//     </div>
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+// // using the useState hook to toggle between two colors on a button click
+
+
+// import Widget1 from "./Widget1"
+// import Widget2 from "./Widget2"
+// import Widget3 from "./Widget3"
 
 
 
 
 
 
+// const App = () => {
 
 
 
+//   return ( <div className=" flex flex-col items-center ">
+//     <Widget1 /> 
+//     <Widget2 /> 
+//     <Widget3 /> 
+//     </div>
+//   )
+// }
+// export default App
 
 
 
+// // USING THE USESTATE HOOK TO CREATE A COUNTER WITH INCREMENT AND DECREMENT BUTTONS
+
+
+
+// import {useState} from "react"
+
+
+// const App = () => {
+//   const [count, setCount] = useState(0);
+
+//   return ( <div className=" text-4xl flex items-center justify-center border border-black-400 h-screen gap-4">
+//     <button className=" text-white rounded-md w-8 text-4xl bg-red-400 " onClick={() => setCount(count + 1)} > + </button>
+//     <div className=" m-4 text-neutral-400 " >{count}</div>
+//     <button className=" text-white rounded-md w-8 text-4xl bg-emerald-400" onClick={() => setCount(count - 1)} > - </button>
+//     </div>
+//   )
+// }
+// export default App
+
+
+
+// // CREATING  A TOGGLE BUTTON WITH USESTATE AND TENERAY OPERATION 
+
+
+
+// import { useState } from "react";
+// import clsx from "clsx";
+
+// const App = () => {
+//   const [isOn, setIsOn] = useState(false);
+
+//   const bgColor = isOn ? "bg-yellow-100 " : "bg-slate-600";
+//   return (
+//     <div
+//       className={`flex flex items-center justify-center h-screen ${bgColor} `}
+//     >
+//       <button
+//         onClick={() => {
+//           setIsOn(!isOn);
+//         }}
+//       >
+//         <div
+//           className={` h-8 w-6 ${isOn ? "bg-slate-300" : "bg-slate-200"} `}
+//         ></div>
+//         <div
+//           className={` h-8 w-6 ${isOn ? "bg-slate-200" : "bg-slate-300"} `}
+//         ></div>
+//       </button>
+//     </div>
+//   );
+// };
+// export default App;
 
 
 
